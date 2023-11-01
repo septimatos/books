@@ -1,0 +1,506 @@
+{
+	"info": {
+		"_postman_id": "ba52bccd-fb51-49e7-b3ed-fee032febb08",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://book.loc/api/guest/authorsList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/guest/authorsList",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"guest",
+						"authorsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/guest/genresList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/guest/genresList",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"guest",
+						"genresList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/guest/booksList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/guest/booksList",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"guest",
+						"booksList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/guest/booksByAuthorIdList/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/guest/booksByAuthorIdList/3",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"guest",
+						"booksByAuthorIdList",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/guest/booksByGenreIdList/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/guest/booksByGenreIdList/3",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"guest",
+						"booksByGenreIdList",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Some_login\",\n    \"email\": \"septikveter@gmail.com\",\n    \"password\": \"some_pass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://book.loc/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/authors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|HxmhjeuPj1evnk5a9561hGbX3vsgL67ACeFnkxU4d0b14cb8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"John Ronald R1euel\",\n    \"last_name\": \"Tolkie1n\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://book.loc/api/authors",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "\thttp://book.loc/api/books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|HxmhjeuPj1evnk5a9561hGbX3vsgL67ACeFnkxU4d0b14cb8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Властелин колasdadasdец\",\n    \"avatar\": \"https://cdn.britannica.com/50/175050-050-09E67583/riders-Mumakil-The-Lord-of-the-Rings.jpg\",\n    \"authors\": [\n      3, 1\n    ],\n    \"genres\": [\n      1, 3\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://book.loc/api/books",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/genres",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|HxmhjeuPj1evnk5a9561hGbX3vsgL67ACeFnkxU4d0b14cb8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"fantas1tic\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://book.loc/api/genres",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"genres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/genres/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"novel123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://book.loc/api/genres/2",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"genres",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/authors/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"John Ronald a1sdsadsadl\",\n    \"last_name\": \"Tolkie1n\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://book.loc/api/authors/2",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"authors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/books/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Властелин колец\",\n    \"avatar\": \"https:/asdasdsadd-of-the-Rings.jpg\",\n    \"authors\": [\n      3, 1\n    ],\n    \"genres\": [\n      2, 1\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://book.loc/api/books/2",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/authors/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/authors/2",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"authors",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/genres/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/genres/2",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"genres",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/books/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/books/2",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"books",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|HxmhjeuPj1evnk5a9561hGbX3vsgL67ACeFnkxU4d0b14cb8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/books",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/authors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|HxmhjeuPj1evnk5a9561hGbX3vsgL67ACeFnkxU4d0b14cb8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/authors",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://book.loc/api/genres",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|HxmhjeuPj1evnk5a9561hGbX3vsgL67ACeFnkxU4d0b14cb8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://book.loc/api/genres",
+					"protocol": "http",
+					"host": [
+						"book",
+						"loc"
+					],
+					"path": [
+						"api",
+						"genres"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

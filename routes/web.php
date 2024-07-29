@@ -13,3 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['namespace' => 'App\Http\Controllers'], function () {
+
+    Route::post('/telegram/take', 'TelegramController@take'); // точка входа для телеграма
+    Route::post('/telegram/getCode', 'TelegramController@getCode'); // получение кода привязки юзера
+    
+    
+
+});
